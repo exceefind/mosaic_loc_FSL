@@ -1,0 +1,25 @@
+data:
+  root: workship/mini-imagenet
+
+
+
+  trainloader:
+    worker: 4
+    batch_size: 64
+
+  testloader:
+    worker: 4
+    batch_size: 64
+
+train:
+  num_classes: 64
+#  lr : 0.05
+#  continue_
+  lr : 0.1
+  Epoch_num: 300
+  optimizer: SGD
+  weight_decay: 5e-4
+  lr_decay: True
+  lr_decay_tactics: MultiStepLR
+  markstone: [ 40,80,120,160,200,240,280]
+#  markstone: [ 30,60,80,120]

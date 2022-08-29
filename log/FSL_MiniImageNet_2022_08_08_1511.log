@@ -1,0 +1,65 @@
+INFO: 2022-08-08 03:07:16,954 : ----------------------------------------------------------------------------------------------------experiment start!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-08 03:07:16,954 : FSL_learning: 	 n_way: 5  	 k_shot: 5
+INFO: 2022-08-08 03:07:16,954 : {'gpu': 4, 'fsl_val': True, 'n_way': 5, 'k_shot': 5, 'q_shot': 20, 'num_sim': 5, 'net': 'resnet12', 'not_use_mosaic': True, 'sim_way': 1, 'dist_scale': 1.0, 'boundingbox': False, 'sim_mix': False, 'randomMosaic': True, 'mosaic_baseSize': 0.5, 'size_bias': 0, 'mosaic_num': 10, 'Novel_Mosaic_rate': 1.0, 'Location': True, 'no_pretrained': False, 'id': 1511, 'Epoch': 20, 'beta': 0.6, 'lr_base': 0.001, 'train_head': False, 'proto_loss': True, 'have_Original': True, 'mosaic_ori_num': 3, 'idx_task': None, 'num_task': 100, 'dataset': 'mini_imagenet', 'Few_loss': False, 'grid': 3, 'baseline': False, 'random_mosaic': False, 'yaml': None, 'test_mosaic': True}
+INFO: 2022-08-08 03:07:16,961 : model parameters :  
+INFO: 2022-08-08 03:07:16,961 : {'alpha': 1, 'beta_moving': 0.66, 'num_cls': 5, 'lr': 0.002, 'Epoch_num': 20, 'optimizer': 'SGD', 'weight_decay': '1e-4', 'lr_decay': True, 'decay_lr': 0.4, 'momentum': 0.9, 'temperature': 4, 'lr_decay_tactics': 'MultiStepLR', 'markstone': [20, 40, 60, 80, 160], 'scale_backbone': 0.1}
+INFO: 2022-08-08 03:07:19,941 : Sample FSL classes:   
+INFO: 2022-08-08 03:07:19,942 : [6, 4, 0, 10, 5]
+INFO: 2022-08-08 03:07:20,102 : Few-shot model start training...
+INFO: 2022-08-08 03:07:26,982 : Epoch 0 of 20 :  	  Step 0 of 3: 	 loss_train: 0.6751 	 loss_classification: 0.2150 	loss_Location: 0.7667
+INFO: 2022-08-08 03:07:34,528 : ----------------------------------------------------------------------------------------------------experiment start!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-08 03:07:34,529 : FSL_learning: 	 n_way: 5  	 k_shot: 5
+INFO: 2022-08-08 03:07:34,529 : {'gpu': 2, 'fsl_val': True, 'n_way': 5, 'k_shot': 5, 'q_shot': 20, 'num_sim': 5, 'net': 'resnet12', 'not_use_mosaic': True, 'sim_way': 1, 'dist_scale': 1.0, 'boundingbox': False, 'sim_mix': False, 'randomMosaic': True, 'mosaic_baseSize': 0.5, 'size_bias': 0, 'mosaic_num': 10, 'Novel_Mosaic_rate': 1.0, 'Location': True, 'no_pretrained': False, 'id': 1511, 'Epoch': 20, 'beta': 0.6, 'lr_base': 0.001, 'train_head': False, 'proto_loss': True, 'have_Original': True, 'mosaic_ori_num': 3, 'idx_task': None, 'num_task': 100, 'dataset': 'mini_imagenet', 'Few_loss': False, 'grid': 3, 'baseline': False, 'random_mosaic': False, 'yaml': None, 'test_mosaic': True}
+INFO: 2022-08-08 03:07:34,533 : model parameters :  
+INFO: 2022-08-08 03:07:34,533 : {'alpha': 1, 'beta_moving': 0.66, 'num_cls': 5, 'lr': 0.002, 'Epoch_num': 20, 'optimizer': 'SGD', 'weight_decay': '1e-4', 'lr_decay': True, 'decay_lr': 0.4, 'momentum': 0.9, 'temperature': 4, 'lr_decay_tactics': 'MultiStepLR', 'markstone': [20, 40, 60, 80, 160], 'scale_backbone': 0.1}
+INFO: 2022-08-08 03:07:37,632 : Sample FSL classes:   
+INFO: 2022-08-08 03:07:37,632 : [6, 4, 0, 10, 5]
+INFO: 2022-08-08 03:07:37,788 : Few-shot model start training...
+INFO: 2022-08-08 03:07:45,112 : Epoch 0 of 20 :  	  Step 0 of 3: 	 loss_train: 0.6400 	 loss_classification: 0.2006 	loss_Location: 0.7322
+INFO: 2022-08-08 03:09:11,140 : Epoch 0 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.5500
+INFO: 2022-08-08 03:09:17,920 : Epoch 1 of 20 :  	  Step 0 of 3: 	 loss_train: 0.5105 	 loss_classification: 0.0874 	loss_Location: 0.7050
+INFO: 2022-08-08 03:10:46,727 : Epoch 1 of 20:  	 Dev_Acc : 0.6700  	 Best_Dev_Acc:0.6700
+INFO: 2022-08-08 03:10:53,322 : Epoch 2 of 20 :  	  Step 0 of 3: 	 loss_train: 0.4233 	 loss_classification: 0.0344 	loss_Location: 0.6482
+INFO: 2022-08-08 03:12:21,018 : Epoch 2 of 20:  	 Dev_Acc : 0.7200  	 Best_Dev_Acc:0.7200
+INFO: 2022-08-08 03:12:27,683 : Epoch 3 of 20 :  	  Step 0 of 3: 	 loss_train: 0.3680 	 loss_classification: 0.0219 	loss_Location: 0.5768
+INFO: 2022-08-08 03:13:55,245 : Epoch 3 of 20:  	 Dev_Acc : 0.7600  	 Best_Dev_Acc:0.7600
+INFO: 2022-08-08 03:14:01,630 : Epoch 4 of 20 :  	  Step 0 of 3: 	 loss_train: 0.3093 	 loss_classification: 0.0066 	loss_Location: 0.5046
+INFO: 2022-08-08 03:15:28,542 : Epoch 4 of 20:  	 Dev_Acc : 0.8000  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:15:34,891 : Epoch 5 of 20 :  	  Step 0 of 3: 	 loss_train: 0.2627 	 loss_classification: 0.0025 	loss_Location: 0.4337
+INFO: 2022-08-08 03:17:01,740 : Epoch 5 of 20:  	 Dev_Acc : 0.8000  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:17:08,102 : Epoch 6 of 20 :  	  Step 0 of 3: 	 loss_train: 0.2235 	 loss_classification: 0.0017 	loss_Location: 0.3696
+INFO: 2022-08-08 03:18:34,841 : Epoch 6 of 20:  	 Dev_Acc : 0.7300  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:18:41,633 : Epoch 7 of 20 :  	  Step 0 of 3: 	 loss_train: 0.1891 	 loss_classification: 0.0007 	loss_Location: 0.3141
+INFO: 2022-08-08 03:20:10,654 : Epoch 7 of 20:  	 Dev_Acc : 0.7600  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:20:17,390 : Epoch 8 of 20 :  	  Step 0 of 3: 	 loss_train: 0.1646 	 loss_classification: 0.0047 	loss_Location: 0.2665
+INFO: 2022-08-08 03:21:46,072 : Epoch 8 of 20:  	 Dev_Acc : 0.7900  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:21:52,148 : Epoch 9 of 20 :  	  Step 0 of 3: 	 loss_train: 0.1371 	 loss_classification: 0.0003 	loss_Location: 0.2281
+INFO: 2022-08-08 03:23:21,937 : Epoch 9 of 20:  	 Dev_Acc : 0.7700  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:23:28,402 : Epoch 10 of 20 :  	  Step 0 of 3: 	 loss_train: 0.1190 	 loss_classification: 0.0009 	loss_Location: 0.1968
+INFO: 2022-08-08 03:24:57,189 : Epoch 10 of 20:  	 Dev_Acc : 0.7700  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:25:03,009 : Epoch 11 of 20 :  	  Step 0 of 3: 	 loss_train: 0.1029 	 loss_classification: 0.0004 	loss_Location: 0.1708
+INFO: 2022-08-08 03:26:32,148 : Epoch 11 of 20:  	 Dev_Acc : 0.7500  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:26:38,487 : Epoch 12 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0894 	 loss_classification: 0.0001 	loss_Location: 0.1488
+INFO: 2022-08-08 03:28:05,910 : Epoch 12 of 20:  	 Dev_Acc : 0.7800  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:28:12,485 : Epoch 13 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0794 	 loss_classification: 0.0001 	loss_Location: 0.1322
+INFO: 2022-08-08 03:29:42,445 : Epoch 13 of 20:  	 Dev_Acc : 0.7700  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:29:49,425 : Epoch 14 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0709 	 loss_classification: 0.0007 	loss_Location: 0.1169
+INFO: 2022-08-08 03:31:19,488 : Epoch 14 of 20:  	 Dev_Acc : 0.7700  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:31:26,309 : Epoch 15 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0639 	 loss_classification: 0.0001 	loss_Location: 0.1063
+INFO: 2022-08-08 03:32:53,498 : Epoch 15 of 20:  	 Dev_Acc : 0.7700  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:33:00,452 : Epoch 16 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0572 	 loss_classification: 0.0001 	loss_Location: 0.0951
+INFO: 2022-08-08 03:34:29,009 : Epoch 16 of 20:  	 Dev_Acc : 0.7500  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:34:35,794 : Epoch 17 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0522 	 loss_classification: 0.0002 	loss_Location: 0.0867
+INFO: 2022-08-08 03:36:05,384 : Epoch 17 of 20:  	 Dev_Acc : 0.7600  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:36:11,880 : Epoch 18 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0478 	 loss_classification: 0.0000 	loss_Location: 0.0795
+INFO: 2022-08-08 03:37:39,737 : Epoch 18 of 20:  	 Dev_Acc : 0.7500  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:37:46,354 : Epoch 19 of 20 :  	  Step 0 of 3: 	 loss_train: 0.0439 	 loss_classification: 0.0001 	loss_Location: 0.0729
+INFO: 2022-08-08 03:39:13,711 : Epoch 19 of 20:  	 Dev_Acc : 0.7600  	 Best_Dev_Acc:0.8000
+INFO: 2022-08-08 03:39:13,711 : Few-shot model start finish!
+INFO: 2022-08-08 03:39:13,711 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-08 03:39:13,773 : Sample FSL classes:   
+INFO: 2022-08-08 03:39:13,773 : [13, 3, 2, 8, 4]
+INFO: 2022-08-08 03:39:13,967 : Few-shot model start training...
+INFO: 2022-08-08 03:39:18,251 : Epoch 0 of 20 :  	  Step 0 of 3: 	 loss_train: 0.6331 	 loss_classification: 0.2101 	loss_Location: 0.7049
+INFO: 2022-08-08 03:40:32,209 : Epoch 0 of 20:  	 Dev_Acc : 0.7300  	 Best_Dev_Acc:0.7300
+INFO: 2022-08-08 03:40:36,585 : Epoch 1 of 20 :  	  Step 0 of 3: 	 loss_train: 0.5039 	 loss_classification: 0.0971 	loss_Location: 0.6779

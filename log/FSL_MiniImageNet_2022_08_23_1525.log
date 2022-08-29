@@ -1,0 +1,9 @@
+INFO: 2022-08-23 08:57:02,844 : ----------------------------------------------------------------------------------------------------experiment start!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-23 08:57:02,844 : FSL_learning: 	 n_way: 5  	 k_shot: 5
+INFO: 2022-08-23 08:57:02,844 : {'gpu': 2, 'fsl_val': True, 'n_way': 5, 'k_shot': 5, 'q_shot': 50, 'num_sim': 5, 'net': 'resnet12', 'not_use_mosaic': True, 'sim_way': 1, 'dist_scale': 1.0, 'boundingbox': False, 'sim_mix': False, 'randomMosaic': True, 'mosaic_baseSize': 0.5, 'size_bias': 0, 'mosaic_num': 50, 'Novel_Mosaic_rate': 1.0, 'Location': True, 'no_pretrained': False, 'id': 1525, 'Epoch': 10, 'beta': 0.4, 'lr_base': 0.0005, 'train_head': False, 'proto_loss': False, 'have_Original': True, 'mosaic_ori_num': 1, 'idx_task': None, 'num_task': 100, 'dataset': 'mini_imagenet', 'Few_loss': False, 'grid': 2, 'baseline': False, 'random_mosaic': False, 'yaml': None, 'test_mosaic': False, 'base_mos': True}
+INFO: 2022-08-23 08:57:02,850 : model parameters :  
+INFO: 2022-08-23 08:57:02,850 : {'alpha': 1, 'beta_moving': 0.66, 'num_cls': 5, 'lr': 0.002, 'lr_backbone': 0.0001, 'Epoch_num': 20, 'optimizer': 'SGD', 'weight_decay': '8e-4', 'lr_decay': True, 'decay_lr': 0.2, 'momentum': 0.9, 'temperature': 4, 'lr_decay_tactics': 'MultiStepLR', 'markstone': [20], 'scale_backbone': 1}
+INFO: 2022-08-23 08:57:09,147 : Sample FSL classes:   
+INFO: 2022-08-23 08:57:09,148 : [6, 4, 0, 10, 5]
+INFO: 2022-08-23 08:57:10,392 : Base on shortest distance, find similiar class
+INFO: 2022-08-23 08:57:10,626 : Few-shot model start training...

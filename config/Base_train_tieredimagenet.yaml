@@ -1,0 +1,24 @@
+data:
+  root: workship/tiered-imagenet
+
+
+  trainloader:
+    worker: 4
+    batch_size: 64
+
+  testloader:
+    worker: 2
+    batch_size: 128
+
+train:
+#  train_num_pc: 600
+  num_classes: 351
+  lr : 0.05
+#  continue_
+#  lr : 0.001
+  Epoch_num: 150
+  optimizer: SGD
+  weight_decay: 5e-4
+  lr_decay: True
+  lr_decay_tactics: MultiStepLR
+  markstone: [ 30,60,80,120]

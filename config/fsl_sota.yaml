@@ -1,0 +1,29 @@
+data:
+  root: ./workship/mini-imagenet
+#  root: workship/tiered-imagenet
+
+  trainloader:
+    worker: 4
+    batch_size: 64
+
+  testloader:
+    worker: 2
+    batch_size: 64
+
+train:
+#  alpha: sacle param about classification
+#  beta: scale param about location
+  alpha:  1
+  beta_moving: 0.66
+  num_cls: 5
+  lr: 0.0002
+  Epoch_num: 20
+  optimizer: SGD
+  momentum: 0.95
+  weight_decay: 1e-4
+  lr_decay: True
+  decay_lr:  0.5
+  temperature: 512
+  lr_decay_tactics: MultiStepLR
+  markstone: [20,40,60,80,100,120,140]
+  scale_backbone: 1

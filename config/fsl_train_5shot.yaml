@@ -1,0 +1,35 @@
+data:
+  root: ./workship/miniImageNet
+
+  trainloader:
+    worker: 8
+    batch_size: 64
+
+  testloader:
+    worker: 4
+    batch_size: 64
+
+train:
+#  alpha: sacle param about classification
+#  beta: scale param about location
+  alpha:  1
+#  beta: 0.0001
+  beta_moving: 0.66
+  num_cls: 5
+
+#  continue_
+#  lr : 0.005
+
+#  fsl_lr record:
+#  lr = 0.1 :acc bias  0.3-0.7   loss bias:0.2-1  dev_moving_acc = 0.65  100 EPOCH
+#  lr : 0.001   ACC = 0.67-0.68 100 Epoch
+#  lr: 0.04     ACC=0.50
+#  lr: 0.004
+#  lr: 0.04
+  Epoch_num: 30
+  optimizer: SGD
+  weight_decay: 5e-4
+  lr_decay: True
+  decay_lr:  0.4
+  lr_decay_tactics: MultiStepLR
+  markstone: [10,20]

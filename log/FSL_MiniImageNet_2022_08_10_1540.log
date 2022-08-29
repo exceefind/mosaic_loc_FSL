@@ -1,0 +1,417 @@
+INFO: 2022-08-10 03:49:43,296 : ----------------------------------------------------------------------------------------------------experiment start!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 03:49:43,297 : FSL_learning: 	 n_way: 5  	 k_shot: 5
+INFO: 2022-08-10 03:49:43,297 : {'gpu': 2, 'fsl_val': True, 'n_way': 5, 'k_shot': 5, 'q_shot': 20, 'num_sim': 5, 'net': 'resnet12', 'not_use_mosaic': True, 'sim_way': 1, 'dist_scale': 1.0, 'boundingbox': False, 'sim_mix': False, 'randomMosaic': True, 'mosaic_baseSize': 0.5, 'size_bias': 0, 'mosaic_num': 5, 'Novel_Mosaic_rate': 1.0, 'Location': True, 'no_pretrained': False, 'id': 1540, 'Epoch': 20, 'beta': 0.4, 'lr_base': 0.0004, 'train_head': False, 'proto_loss': True, 'have_Original': True, 'mosaic_ori_num': 3, 'idx_task': None, 'num_task': 100, 'dataset': 'mini_imagenet', 'Few_loss': False, 'grid': 3, 'baseline': False, 'random_mosaic': False, 'yaml': None, 'test_mosaic': False}
+INFO: 2022-08-10 03:49:43,303 : model parameters :  
+INFO: 2022-08-10 03:49:43,303 : {'alpha': 1, 'beta_moving': 0.66, 'num_cls': 5, 'lr': 0.002, 'Epoch_num': 20, 'optimizer': 'SGD', 'weight_decay': '1e-4', 'lr_decay': True, 'decay_lr': 0.5, 'momentum': 0.9, 'temperature': 4, 'lr_decay_tactics': 'MultiStepLR', 'markstone': [10], 'scale_backbone': 0.1}
+INFO: 2022-08-10 03:49:46,313 : Sample FSL classes:   
+INFO: 2022-08-10 03:49:46,313 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 03:49:46,491 : Few-shot model start training...
+INFO: 2022-08-10 03:49:50,721 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3377 	 loss_classification: 0.0290 	loss_Location: 0.7718
+INFO: 2022-08-10 03:49:51,899 : Epoch 0 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.5800
+INFO: 2022-08-10 03:49:55,871 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3362 	 loss_classification: 0.0288 	loss_Location: 0.7685
+INFO: 2022-08-10 03:49:57,475 : Epoch 1 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.5800
+INFO: 2022-08-10 03:50:01,376 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3296 	 loss_classification: 0.0254 	loss_Location: 0.7605
+INFO: 2022-08-10 03:50:02,909 : Epoch 2 of 20:  	 Dev_Acc : 0.6400  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:06,912 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3191 	 loss_classification: 0.0200 	loss_Location: 0.7477
+INFO: 2022-08-10 03:50:08,450 : Epoch 3 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:12,470 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3257 	 loss_classification: 0.0319 	loss_Location: 0.7345
+INFO: 2022-08-10 03:50:13,968 : Epoch 4 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:17,923 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3090 	 loss_classification: 0.0219 	loss_Location: 0.7177
+INFO: 2022-08-10 03:50:19,463 : Epoch 5 of 20:  	 Dev_Acc : 0.6200  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:23,512 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3063 	 loss_classification: 0.0264 	loss_Location: 0.6999
+INFO: 2022-08-10 03:50:25,026 : Epoch 6 of 20:  	 Dev_Acc : 0.4000  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:28,999 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2843 	 loss_classification: 0.0116 	loss_Location: 0.6818
+INFO: 2022-08-10 03:50:30,548 : Epoch 7 of 20:  	 Dev_Acc : 0.5300  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:34,564 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2765 	 loss_classification: 0.0115 	loss_Location: 0.6625
+INFO: 2022-08-10 03:50:36,104 : Epoch 8 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:40,092 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2708 	 loss_classification: 0.0134 	loss_Location: 0.6436
+INFO: 2022-08-10 03:50:41,672 : Epoch 9 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:45,799 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2603 	 loss_classification: 0.0108 	loss_Location: 0.6238
+INFO: 2022-08-10 03:50:47,316 : Epoch 10 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:51,266 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2591 	 loss_classification: 0.0131 	loss_Location: 0.6149
+INFO: 2022-08-10 03:50:52,876 : Epoch 11 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:50:57,126 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2594 	 loss_classification: 0.0175 	loss_Location: 0.6048
+INFO: 2022-08-10 03:50:58,623 : Epoch 12 of 20:  	 Dev_Acc : 0.4400  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:02,612 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2466 	 loss_classification: 0.0086 	loss_Location: 0.5950
+INFO: 2022-08-10 03:51:04,167 : Epoch 13 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:08,083 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2447 	 loss_classification: 0.0104 	loss_Location: 0.5859
+INFO: 2022-08-10 03:51:09,658 : Epoch 14 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:13,527 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2381 	 loss_classification: 0.0074 	loss_Location: 0.5768
+INFO: 2022-08-10 03:51:15,084 : Epoch 15 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:19,217 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2355 	 loss_classification: 0.0088 	loss_Location: 0.5666
+INFO: 2022-08-10 03:51:20,772 : Epoch 16 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:24,792 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2301 	 loss_classification: 0.0069 	loss_Location: 0.5579
+INFO: 2022-08-10 03:51:26,264 : Epoch 17 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:30,230 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2279 	 loss_classification: 0.0081 	loss_Location: 0.5495
+INFO: 2022-08-10 03:51:31,779 : Epoch 18 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:35,606 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2262 	 loss_classification: 0.0101 	loss_Location: 0.5404
+INFO: 2022-08-10 03:51:37,176 : Epoch 19 of 20:  	 Dev_Acc : 0.4600  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:37,177 : Few-shot model start finish!
+INFO: 2022-08-10 03:51:37,177 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 03:51:37,239 : Sample FSL classes:   
+INFO: 2022-08-10 03:51:37,239 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 03:51:37,430 : Few-shot model start training...
+INFO: 2022-08-10 03:51:41,199 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2981 	 loss_classification: 0.0170 	loss_Location: 0.7027
+INFO: 2022-08-10 03:51:42,727 : Epoch 0 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.5600
+INFO: 2022-08-10 03:51:46,663 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3006 	 loss_classification: 0.0205 	loss_Location: 0.7002
+INFO: 2022-08-10 03:51:48,134 : Epoch 1 of 20:  	 Dev_Acc : 0.6400  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:51:52,098 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2943 	 loss_classification: 0.0175 	loss_Location: 0.6919
+INFO: 2022-08-10 03:51:53,660 : Epoch 2 of 20:  	 Dev_Acc : 0.6500  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:51:57,532 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2976 	 loss_classification: 0.0250 	loss_Location: 0.6817
+INFO: 2022-08-10 03:51:59,083 : Epoch 3 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:03,073 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2778 	 loss_classification: 0.0107 	loss_Location: 0.6677
+INFO: 2022-08-10 03:52:04,683 : Epoch 4 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:08,708 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2738 	 loss_classification: 0.0126 	loss_Location: 0.6528
+INFO: 2022-08-10 03:52:10,236 : Epoch 5 of 20:  	 Dev_Acc : 0.6300  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:14,100 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2682 	 loss_classification: 0.0137 	loss_Location: 0.6361
+INFO: 2022-08-10 03:52:15,643 : Epoch 6 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:19,493 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2558 	 loss_classification: 0.0084 	loss_Location: 0.6186
+INFO: 2022-08-10 03:52:21,076 : Epoch 7 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:24,918 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2510 	 loss_classification: 0.0107 	loss_Location: 0.6010
+INFO: 2022-08-10 03:52:26,444 : Epoch 8 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:30,413 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2415 	 loss_classification: 0.0085 	loss_Location: 0.5827
+INFO: 2022-08-10 03:52:31,891 : Epoch 9 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:35,871 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2323 	 loss_classification: 0.0062 	loss_Location: 0.5653
+INFO: 2022-08-10 03:52:37,436 : Epoch 10 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:41,402 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2302 	 loss_classification: 0.0080 	loss_Location: 0.5556
+INFO: 2022-08-10 03:52:42,898 : Epoch 11 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:46,760 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2256 	 loss_classification: 0.0063 	loss_Location: 0.5484
+INFO: 2022-08-10 03:52:48,280 : Epoch 12 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:52,257 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2228 	 loss_classification: 0.0074 	loss_Location: 0.5384
+INFO: 2022-08-10 03:52:53,780 : Epoch 13 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:52:57,743 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2173 	 loss_classification: 0.0050 	loss_Location: 0.5306
+INFO: 2022-08-10 03:52:59,201 : Epoch 14 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:53:03,088 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2138 	 loss_classification: 0.0052 	loss_Location: 0.5215
+INFO: 2022-08-10 03:53:04,619 : Epoch 15 of 20:  	 Dev_Acc : 0.6600  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 03:53:08,820 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2108 	 loss_classification: 0.0054 	loss_Location: 0.5135
+INFO: 2022-08-10 03:53:10,340 : Epoch 16 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 03:53:14,227 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2099 	 loss_classification: 0.0082 	loss_Location: 0.5042
+INFO: 2022-08-10 03:53:15,764 : Epoch 17 of 20:  	 Dev_Acc : 0.6300  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 03:53:19,697 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2051 	 loss_classification: 0.0067 	loss_Location: 0.4961
+INFO: 2022-08-10 03:53:21,166 : Epoch 18 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 03:53:25,024 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2029 	 loss_classification: 0.0070 	loss_Location: 0.4897
+INFO: 2022-08-10 03:53:26,540 : Epoch 19 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 03:53:26,541 : Few-shot model start finish!
+INFO: 2022-08-10 03:53:26,541 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 03:53:26,602 : Sample FSL classes:   
+INFO: 2022-08-10 03:53:26,602 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 03:53:26,763 : Few-shot model start training...
+INFO: 2022-08-10 03:53:30,428 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3284 	 loss_classification: 0.0312 	loss_Location: 0.7431
+INFO: 2022-08-10 03:53:31,895 : Epoch 0 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.5700
+INFO: 2022-08-10 03:53:35,596 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3252 	 loss_classification: 0.0295 	loss_Location: 0.7391
+INFO: 2022-08-10 03:53:37,053 : Epoch 1 of 20:  	 Dev_Acc : 0.4700  	 Best_Dev_Acc:0.5700
+INFO: 2022-08-10 03:53:40,723 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3211 	 loss_classification: 0.0294 	loss_Location: 0.7293
+INFO: 2022-08-10 03:53:42,222 : Epoch 2 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.5800
+INFO: 2022-08-10 03:53:45,891 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2994 	 loss_classification: 0.0118 	loss_Location: 0.7191
+INFO: 2022-08-10 03:53:47,398 : Epoch 3 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.5800
+INFO: 2022-08-10 03:53:51,082 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3034 	 loss_classification: 0.0218 	loss_Location: 0.7040
+INFO: 2022-08-10 03:53:52,527 : Epoch 4 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.5900
+INFO: 2022-08-10 03:53:56,246 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2948 	 loss_classification: 0.0192 	loss_Location: 0.6890
+INFO: 2022-08-10 03:53:57,701 : Epoch 5 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.5900
+INFO: 2022-08-10 03:54:01,420 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2916 	 loss_classification: 0.0231 	loss_Location: 0.6714
+INFO: 2022-08-10 03:54:02,908 : Epoch 6 of 20:  	 Dev_Acc : 0.6400  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:54:06,805 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2726 	 loss_classification: 0.0116 	loss_Location: 0.6525
+INFO: 2022-08-10 03:54:08,158 : Epoch 7 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:54:12,118 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2663 	 loss_classification: 0.0125 	loss_Location: 0.6346
+INFO: 2022-08-10 03:54:13,581 : Epoch 8 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:54:17,209 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2605 	 loss_classification: 0.0141 	loss_Location: 0.6161
+INFO: 2022-08-10 03:54:18,753 : Epoch 9 of 20:  	 Dev_Acc : 0.6200  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:54:22,417 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2517 	 loss_classification: 0.0131 	loss_Location: 0.5966
+INFO: 2022-08-10 03:54:23,883 : Epoch 10 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:54:27,672 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2388 	 loss_classification: 0.0036 	loss_Location: 0.5880
+INFO: 2022-08-10 03:54:29,133 : Epoch 11 of 20:  	 Dev_Acc : 0.6100  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:54:32,866 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2400 	 loss_classification: 0.0088 	loss_Location: 0.5780
+INFO: 2022-08-10 03:54:34,333 : Epoch 12 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6400
+INFO: 2022-08-10 03:54:38,333 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2324 	 loss_classification: 0.0044 	loss_Location: 0.5699
+INFO: 2022-08-10 03:54:39,753 : Epoch 13 of 20:  	 Dev_Acc : 0.6500  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:54:43,431 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2326 	 loss_classification: 0.0087 	loss_Location: 0.5599
+INFO: 2022-08-10 03:54:44,971 : Epoch 14 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:54:48,632 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2285 	 loss_classification: 0.0083 	loss_Location: 0.5504
+INFO: 2022-08-10 03:54:50,175 : Epoch 15 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:54:53,866 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2243 	 loss_classification: 0.0079 	loss_Location: 0.5410
+INFO: 2022-08-10 03:54:55,299 : Epoch 16 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:54:59,044 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2222 	 loss_classification: 0.0092 	loss_Location: 0.5324
+INFO: 2022-08-10 03:55:00,478 : Epoch 17 of 20:  	 Dev_Acc : 0.6300  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:55:04,180 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2213 	 loss_classification: 0.0116 	loss_Location: 0.5245
+INFO: 2022-08-10 03:55:05,625 : Epoch 18 of 20:  	 Dev_Acc : 0.6300  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:55:09,333 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2111 	 loss_classification: 0.0047 	loss_Location: 0.5158
+INFO: 2022-08-10 03:55:10,741 : Epoch 19 of 20:  	 Dev_Acc : 0.6100  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:55:10,741 : Few-shot model start finish!
+INFO: 2022-08-10 03:55:10,741 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 03:55:10,803 : Sample FSL classes:   
+INFO: 2022-08-10 03:55:10,803 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 03:55:10,969 : Few-shot model start training...
+INFO: 2022-08-10 03:55:14,966 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2984 	 loss_classification: 0.0207 	loss_Location: 0.6942
+INFO: 2022-08-10 03:55:16,510 : Epoch 0 of 20:  	 Dev_Acc : 0.6200  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:20,488 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3056 	 loss_classification: 0.0293 	loss_Location: 0.6908
+INFO: 2022-08-10 03:55:22,029 : Epoch 1 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:25,888 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3046 	 loss_classification: 0.0315 	loss_Location: 0.6826
+INFO: 2022-08-10 03:55:27,432 : Epoch 2 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:31,401 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2925 	 loss_classification: 0.0233 	loss_Location: 0.6730
+INFO: 2022-08-10 03:55:32,988 : Epoch 3 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:36,871 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2866 	 loss_classification: 0.0225 	loss_Location: 0.6600
+INFO: 2022-08-10 03:55:38,363 : Epoch 4 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:42,344 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2778 	 loss_classification: 0.0190 	loss_Location: 0.6471
+INFO: 2022-08-10 03:55:43,830 : Epoch 5 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:47,619 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2642 	 loss_classification: 0.0120 	loss_Location: 0.6303
+INFO: 2022-08-10 03:55:49,104 : Epoch 6 of 20:  	 Dev_Acc : 0.4400  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:52,929 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2583 	 loss_classification: 0.0128 	loss_Location: 0.6139
+INFO: 2022-08-10 03:55:54,418 : Epoch 7 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:55:58,267 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2453 	 loss_classification: 0.0073 	loss_Location: 0.5949
+INFO: 2022-08-10 03:55:59,812 : Epoch 8 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:03,690 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2380 	 loss_classification: 0.0064 	loss_Location: 0.5789
+INFO: 2022-08-10 03:56:05,198 : Epoch 9 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:09,017 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2293 	 loss_classification: 0.0044 	loss_Location: 0.5620
+INFO: 2022-08-10 03:56:10,607 : Epoch 10 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:14,575 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2330 	 loss_classification: 0.0116 	loss_Location: 0.5535
+INFO: 2022-08-10 03:56:16,138 : Epoch 11 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:20,035 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2235 	 loss_classification: 0.0052 	loss_Location: 0.5459
+INFO: 2022-08-10 03:56:21,616 : Epoch 12 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:25,501 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2187 	 loss_classification: 0.0045 	loss_Location: 0.5355
+INFO: 2022-08-10 03:56:27,011 : Epoch 13 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:30,969 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2184 	 loss_classification: 0.0072 	loss_Location: 0.5279
+INFO: 2022-08-10 03:56:32,500 : Epoch 14 of 20:  	 Dev_Acc : 0.4900  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:36,306 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2148 	 loss_classification: 0.0069 	loss_Location: 0.5195
+INFO: 2022-08-10 03:56:37,861 : Epoch 15 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:41,703 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2102 	 loss_classification: 0.0060 	loss_Location: 0.5105
+INFO: 2022-08-10 03:56:43,216 : Epoch 16 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:47,028 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2147 	 loss_classification: 0.0128 	loss_Location: 0.5049
+INFO: 2022-08-10 03:56:48,607 : Epoch 17 of 20:  	 Dev_Acc : 0.4500  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:52,481 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2014 	 loss_classification: 0.0029 	loss_Location: 0.4961
+INFO: 2022-08-10 03:56:53,994 : Epoch 18 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6200
+INFO: 2022-08-10 03:56:57,960 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1975 	 loss_classification: 0.0020 	loss_Location: 0.4888
+INFO: 2022-08-10 03:56:59,479 : Epoch 19 of 20:  	 Dev_Acc : 0.6500  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 03:56:59,480 : Few-shot model start finish!
+INFO: 2022-08-10 03:56:59,480 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 03:56:59,540 : Sample FSL classes:   
+INFO: 2022-08-10 03:56:59,540 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 03:56:59,702 : Few-shot model start training...
+INFO: 2022-08-10 03:57:04,039 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2759 	 loss_classification: 0.0160 	loss_Location: 0.6496
+INFO: 2022-08-10 03:57:05,727 : Epoch 0 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:10,040 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2770 	 loss_classification: 0.0182 	loss_Location: 0.6470
+INFO: 2022-08-10 03:57:11,683 : Epoch 1 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:15,942 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2681 	 loss_classification: 0.0120 	loss_Location: 0.6401
+INFO: 2022-08-10 03:57:17,608 : Epoch 2 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:21,917 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2711 	 loss_classification: 0.0188 	loss_Location: 0.6308
+INFO: 2022-08-10 03:57:23,629 : Epoch 3 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:28,307 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2585 	 loss_classification: 0.0110 	loss_Location: 0.6188
+INFO: 2022-08-10 03:57:29,974 : Epoch 4 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:34,196 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2516 	 loss_classification: 0.0096 	loss_Location: 0.6049
+INFO: 2022-08-10 03:57:35,982 : Epoch 5 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:40,168 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2462 	 loss_classification: 0.0102 	loss_Location: 0.5900
+INFO: 2022-08-10 03:57:41,789 : Epoch 6 of 20:  	 Dev_Acc : 0.4700  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:45,898 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2376 	 loss_classification: 0.0074 	loss_Location: 0.5755
+INFO: 2022-08-10 03:57:47,506 : Epoch 7 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:51,975 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2350 	 loss_classification: 0.0110 	loss_Location: 0.5599
+INFO: 2022-08-10 03:57:53,638 : Epoch 8 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:57:58,152 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2317 	 loss_classification: 0.0143 	loss_Location: 0.5434
+INFO: 2022-08-10 03:57:59,810 : Epoch 9 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:03,933 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2215 	 loss_classification: 0.0102 	loss_Location: 0.5281
+INFO: 2022-08-10 03:58:05,693 : Epoch 10 of 20:  	 Dev_Acc : 0.4400  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:10,035 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2116 	 loss_classification: 0.0033 	loss_Location: 0.5208
+INFO: 2022-08-10 03:58:11,841 : Epoch 11 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:16,111 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2137 	 loss_classification: 0.0085 	loss_Location: 0.5130
+INFO: 2022-08-10 03:58:17,779 : Epoch 12 of 20:  	 Dev_Acc : 0.4500  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:22,049 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2053 	 loss_classification: 0.0031 	loss_Location: 0.5055
+INFO: 2022-08-10 03:58:23,727 : Epoch 13 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:28,125 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2016 	 loss_classification: 0.0027 	loss_Location: 0.4972
+INFO: 2022-08-10 03:58:29,867 : Epoch 14 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:34,201 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1992 	 loss_classification: 0.0035 	loss_Location: 0.4894
+INFO: 2022-08-10 03:58:35,898 : Epoch 15 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:40,290 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2005 	 loss_classification: 0.0079 	loss_Location: 0.4814
+INFO: 2022-08-10 03:58:41,889 : Epoch 16 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:46,335 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1967 	 loss_classification: 0.0070 	loss_Location: 0.4742
+INFO: 2022-08-10 03:58:47,982 : Epoch 17 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:52,421 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1894 	 loss_classification: 0.0022 	loss_Location: 0.4680
+INFO: 2022-08-10 03:58:54,139 : Epoch 18 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:58:58,660 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1881 	 loss_classification: 0.0050 	loss_Location: 0.4578
+INFO: 2022-08-10 03:59:00,384 : Epoch 19 of 20:  	 Dev_Acc : 0.4300  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 03:59:00,385 : Few-shot model start finish!
+INFO: 2022-08-10 03:59:00,385 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 03:59:00,454 : Sample FSL classes:   
+INFO: 2022-08-10 03:59:00,454 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 03:59:00,645 : Few-shot model start training...
+INFO: 2022-08-10 03:59:05,035 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3126 	 loss_classification: 0.0154 	loss_Location: 0.7430
+INFO: 2022-08-10 03:59:06,781 : Epoch 0 of 20:  	 Dev_Acc : 0.4800  	 Best_Dev_Acc:0.4800
+INFO: 2022-08-10 03:59:11,457 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3185 	 loss_classification: 0.0228 	loss_Location: 0.7393
+INFO: 2022-08-10 03:59:13,174 : Epoch 1 of 20:  	 Dev_Acc : 0.4600  	 Best_Dev_Acc:0.4800
+INFO: 2022-08-10 03:59:17,766 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3113 	 loss_classification: 0.0184 	loss_Location: 0.7321
+INFO: 2022-08-10 03:59:19,588 : Epoch 2 of 20:  	 Dev_Acc : 0.5300  	 Best_Dev_Acc:0.5300
+INFO: 2022-08-10 03:59:24,118 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3097 	 loss_classification: 0.0213 	loss_Location: 0.7209
+INFO: 2022-08-10 03:59:25,733 : Epoch 3 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.5600
+INFO: 2022-08-10 03:59:30,149 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3053 	 loss_classification: 0.0230 	loss_Location: 0.7059
+INFO: 2022-08-10 03:59:32,033 : Epoch 4 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.5600
+INFO: 2022-08-10 03:59:36,585 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2936 	 loss_classification: 0.0176 	loss_Location: 0.6898
+INFO: 2022-08-10 03:59:38,270 : Epoch 5 of 20:  	 Dev_Acc : 0.4400  	 Best_Dev_Acc:0.5600
+INFO: 2022-08-10 03:59:42,819 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2794 	 loss_classification: 0.0099 	loss_Location: 0.6736
+INFO: 2022-08-10 03:59:44,475 : Epoch 6 of 20:  	 Dev_Acc : 0.4100  	 Best_Dev_Acc:0.5600
+INFO: 2022-08-10 03:59:49,215 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2713 	 loss_classification: 0.0088 	loss_Location: 0.6563
+INFO: 2022-08-10 03:59:50,915 : Epoch 7 of 20:  	 Dev_Acc : 0.6100  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 03:59:55,172 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2679 	 loss_classification: 0.0128 	loss_Location: 0.6379
+INFO: 2022-08-10 03:59:56,947 : Epoch 8 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:01,280 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2514 	 loss_classification: 0.0042 	loss_Location: 0.6181
+INFO: 2022-08-10 04:00:03,038 : Epoch 9 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:07,450 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2452 	 loss_classification: 0.0053 	loss_Location: 0.5999
+INFO: 2022-08-10 04:00:09,141 : Epoch 10 of 20:  	 Dev_Acc : 0.4900  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:13,517 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2433 	 loss_classification: 0.0069 	loss_Location: 0.5911
+INFO: 2022-08-10 04:00:15,333 : Epoch 11 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:19,849 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2375 	 loss_classification: 0.0049 	loss_Location: 0.5815
+INFO: 2022-08-10 04:00:21,493 : Epoch 12 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:26,191 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2361 	 loss_classification: 0.0071 	loss_Location: 0.5724
+INFO: 2022-08-10 04:00:27,957 : Epoch 13 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:32,592 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2284 	 loss_classification: 0.0034 	loss_Location: 0.5625
+INFO: 2022-08-10 04:00:34,402 : Epoch 14 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:39,045 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2253 	 loss_classification: 0.0041 	loss_Location: 0.5531
+INFO: 2022-08-10 04:00:40,634 : Epoch 15 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:45,196 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2274 	 loss_classification: 0.0094 	loss_Location: 0.5450
+INFO: 2022-08-10 04:00:46,954 : Epoch 16 of 20:  	 Dev_Acc : 0.4800  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:51,529 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2231 	 loss_classification: 0.0084 	loss_Location: 0.5368
+INFO: 2022-08-10 04:00:53,360 : Epoch 17 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:00:57,758 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2189 	 loss_classification: 0.0077 	loss_Location: 0.5279
+INFO: 2022-08-10 04:00:59,510 : Epoch 18 of 20:  	 Dev_Acc : 0.4800  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:01:03,863 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2128 	 loss_classification: 0.0047 	loss_Location: 0.5202
+INFO: 2022-08-10 04:01:05,688 : Epoch 19 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:01:05,689 : Few-shot model start finish!
+INFO: 2022-08-10 04:01:05,689 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 04:01:05,750 : Sample FSL classes:   
+INFO: 2022-08-10 04:01:05,750 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 04:01:05,908 : Few-shot model start training...
+INFO: 2022-08-10 04:01:09,710 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3085 	 loss_classification: 0.0085 	loss_Location: 0.7501
+INFO: 2022-08-10 04:01:11,240 : Epoch 0 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.5700
+INFO: 2022-08-10 04:01:15,033 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3061 	 loss_classification: 0.0072 	loss_Location: 0.7472
+INFO: 2022-08-10 04:01:16,534 : Epoch 1 of 20:  	 Dev_Acc : 0.6600  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:20,611 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3129 	 loss_classification: 0.0179 	loss_Location: 0.7373
+INFO: 2022-08-10 04:01:22,081 : Epoch 2 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:25,946 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2954 	 loss_classification: 0.0051 	loss_Location: 0.7258
+INFO: 2022-08-10 04:01:27,443 : Epoch 3 of 20:  	 Dev_Acc : 0.6100  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:31,309 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2918 	 loss_classification: 0.0076 	loss_Location: 0.7104
+INFO: 2022-08-10 04:01:32,694 : Epoch 4 of 20:  	 Dev_Acc : 0.6500  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:36,563 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2858 	 loss_classification: 0.0083 	loss_Location: 0.6939
+INFO: 2022-08-10 04:01:37,969 : Epoch 5 of 20:  	 Dev_Acc : 0.6400  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:41,988 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2764 	 loss_classification: 0.0060 	loss_Location: 0.6760
+INFO: 2022-08-10 04:01:43,431 : Epoch 6 of 20:  	 Dev_Acc : 0.6400  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:47,330 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2680 	 loss_classification: 0.0050 	loss_Location: 0.6576
+INFO: 2022-08-10 04:01:48,845 : Epoch 7 of 20:  	 Dev_Acc : 0.6500  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:52,704 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2603 	 loss_classification: 0.0049 	loss_Location: 0.6385
+INFO: 2022-08-10 04:01:54,249 : Epoch 8 of 20:  	 Dev_Acc : 0.6300  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:01:58,293 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2533 	 loss_classification: 0.0064 	loss_Location: 0.6174
+INFO: 2022-08-10 04:01:59,644 : Epoch 9 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:02:03,484 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2461 	 loss_classification: 0.0065 	loss_Location: 0.5990
+INFO: 2022-08-10 04:02:04,929 : Epoch 10 of 20:  	 Dev_Acc : 0.6500  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:02:08,788 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2390 	 loss_classification: 0.0032 	loss_Location: 0.5893
+INFO: 2022-08-10 04:02:10,298 : Epoch 11 of 20:  	 Dev_Acc : 0.6200  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:02:14,093 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2344 	 loss_classification: 0.0028 	loss_Location: 0.5790
+INFO: 2022-08-10 04:02:15,461 : Epoch 12 of 20:  	 Dev_Acc : 0.7000  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:19,281 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2309 	 loss_classification: 0.0028 	loss_Location: 0.5704
+INFO: 2022-08-10 04:02:20,833 : Epoch 13 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:24,737 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2290 	 loss_classification: 0.0045 	loss_Location: 0.5614
+INFO: 2022-08-10 04:02:26,250 : Epoch 14 of 20:  	 Dev_Acc : 0.6200  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:30,079 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2237 	 loss_classification: 0.0033 	loss_Location: 0.5509
+INFO: 2022-08-10 04:02:31,561 : Epoch 15 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:35,426 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2201 	 loss_classification: 0.0034 	loss_Location: 0.5417
+INFO: 2022-08-10 04:02:36,926 : Epoch 16 of 20:  	 Dev_Acc : 0.6200  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:40,823 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2166 	 loss_classification: 0.0037 	loss_Location: 0.5322
+INFO: 2022-08-10 04:02:42,326 : Epoch 17 of 20:  	 Dev_Acc : 0.6600  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:46,230 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2139 	 loss_classification: 0.0041 	loss_Location: 0.5243
+INFO: 2022-08-10 04:02:47,818 : Epoch 18 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:51,669 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2100 	 loss_classification: 0.0038 	loss_Location: 0.5156
+INFO: 2022-08-10 04:02:53,129 : Epoch 19 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.7000
+INFO: 2022-08-10 04:02:53,129 : Few-shot model start finish!
+INFO: 2022-08-10 04:02:53,129 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 04:02:53,187 : Sample FSL classes:   
+INFO: 2022-08-10 04:02:53,188 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 04:02:53,347 : Few-shot model start training...
+INFO: 2022-08-10 04:02:56,948 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2936 	 loss_classification: 0.0113 	loss_Location: 0.7059
+INFO: 2022-08-10 04:02:58,487 : Epoch 0 of 20:  	 Dev_Acc : 0.4900  	 Best_Dev_Acc:0.4900
+INFO: 2022-08-10 04:03:02,132 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3021 	 loss_classification: 0.0213 	loss_Location: 0.7019
+INFO: 2022-08-10 04:03:03,609 : Epoch 1 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:03:07,285 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2958 	 loss_classification: 0.0179 	loss_Location: 0.6947
+INFO: 2022-08-10 04:03:08,739 : Epoch 2 of 20:  	 Dev_Acc : 0.4700  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:03:12,289 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2858 	 loss_classification: 0.0120 	loss_Location: 0.6845
+INFO: 2022-08-10 04:03:13,824 : Epoch 3 of 20:  	 Dev_Acc : 0.5900  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:03:17,429 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2825 	 loss_classification: 0.0143 	loss_Location: 0.6707
+INFO: 2022-08-10 04:03:18,926 : Epoch 4 of 20:  	 Dev_Acc : 0.6100  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:22,569 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2773 	 loss_classification: 0.0149 	loss_Location: 0.6559
+INFO: 2022-08-10 04:03:24,086 : Epoch 5 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:27,684 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2681 	 loss_classification: 0.0121 	loss_Location: 0.6399
+INFO: 2022-08-10 04:03:29,215 : Epoch 6 of 20:  	 Dev_Acc : 0.4900  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:32,852 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2597 	 loss_classification: 0.0107 	loss_Location: 0.6224
+INFO: 2022-08-10 04:03:34,331 : Epoch 7 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:37,839 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2499 	 loss_classification: 0.0081 	loss_Location: 0.6045
+INFO: 2022-08-10 04:03:39,390 : Epoch 8 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:43,048 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2412 	 loss_classification: 0.0061 	loss_Location: 0.5876
+INFO: 2022-08-10 04:03:44,517 : Epoch 9 of 20:  	 Dev_Acc : 0.5300  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:48,320 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2348 	 loss_classification: 0.0066 	loss_Location: 0.5704
+INFO: 2022-08-10 04:03:49,822 : Epoch 10 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:53,377 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2354 	 loss_classification: 0.0106 	loss_Location: 0.5619
+INFO: 2022-08-10 04:03:54,899 : Epoch 11 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:03:58,508 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2266 	 loss_classification: 0.0058 	loss_Location: 0.5519
+INFO: 2022-08-10 04:04:00,079 : Epoch 12 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:03,943 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2228 	 loss_classification: 0.0054 	loss_Location: 0.5436
+INFO: 2022-08-10 04:04:05,360 : Epoch 13 of 20:  	 Dev_Acc : 0.6100  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:09,034 : Epoch 14 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2235 	 loss_classification: 0.0100 	loss_Location: 0.5338
+INFO: 2022-08-10 04:04:10,489 : Epoch 14 of 20:  	 Dev_Acc : 0.5300  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:14,066 : Epoch 15 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2181 	 loss_classification: 0.0077 	loss_Location: 0.5261
+INFO: 2022-08-10 04:04:15,598 : Epoch 15 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:19,213 : Epoch 16 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2150 	 loss_classification: 0.0080 	loss_Location: 0.5174
+INFO: 2022-08-10 04:04:20,759 : Epoch 16 of 20:  	 Dev_Acc : 0.4600  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:24,379 : Epoch 17 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2116 	 loss_classification: 0.0077 	loss_Location: 0.5098
+INFO: 2022-08-10 04:04:25,977 : Epoch 17 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:29,662 : Epoch 18 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2044 	 loss_classification: 0.0041 	loss_Location: 0.5006
+INFO: 2022-08-10 04:04:31,185 : Epoch 18 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:34,900 : Epoch 19 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2024 	 loss_classification: 0.0055 	loss_Location: 0.4922
+INFO: 2022-08-10 04:04:36,441 : Epoch 19 of 20:  	 Dev_Acc : 0.5300  	 Best_Dev_Acc:0.6100
+INFO: 2022-08-10 04:04:36,442 : Few-shot model start finish!
+INFO: 2022-08-10 04:04:36,442 : ----------------------------------------------------------------------------------------------------experiment finish!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 04:04:36,503 : Sample FSL classes:   
+INFO: 2022-08-10 04:04:36,503 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 04:04:36,661 : Few-shot model start training...
+INFO: 2022-08-10 04:04:41,042 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2920 	 loss_classification: 0.0167 	loss_Location: 0.6884
+INFO: 2022-08-10 04:04:42,838 : Epoch 0 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.5400
+INFO: 2022-08-10 04:04:47,151 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2911 	 loss_classification: 0.0171 	loss_Location: 0.6851
+INFO: 2022-08-10 04:04:48,950 : Epoch 1 of 20:  	 Dev_Acc : 0.5800  	 Best_Dev_Acc:0.5800
+INFO: 2022-08-10 04:04:53,495 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2962 	 loss_classification: 0.0255 	loss_Location: 0.6769
+INFO: 2022-08-10 04:04:55,182 : Epoch 2 of 20:  	 Dev_Acc : 0.6500  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 04:04:59,537 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2840 	 loss_classification: 0.0170 	loss_Location: 0.6675
+INFO: 2022-08-10 04:05:01,277 : Epoch 3 of 20:  	 Dev_Acc : 0.5200  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 04:05:05,527 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2737 	 loss_classification: 0.0116 	loss_Location: 0.6553
+INFO: 2022-08-10 04:05:07,208 : Epoch 4 of 20:  	 Dev_Acc : 0.4300  	 Best_Dev_Acc:0.6500
+INFO: 2022-08-10 04:05:11,469 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2803 	 loss_classification: 0.0241 	loss_Location: 0.6404
+INFO: 2022-08-10 04:05:13,203 : Epoch 5 of 20:  	 Dev_Acc : 0.6600  	 Best_Dev_Acc:0.6600
+INFO: 2022-08-10 04:05:17,451 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2561 	 loss_classification: 0.0060 	loss_Location: 0.6253
+INFO: 2022-08-10 04:05:19,722 : ----------------------------------------------------------------------------------------------------experiment start!----------------------------------------------------------------------------------------------------
+INFO: 2022-08-10 04:05:19,722 : FSL_learning: 	 n_way: 5  	 k_shot: 5
+INFO: 2022-08-10 04:05:19,722 : {'gpu': 2, 'fsl_val': True, 'n_way': 5, 'k_shot': 5, 'q_shot': 20, 'num_sim': 5, 'net': 'resnet12', 'not_use_mosaic': True, 'sim_way': 1, 'dist_scale': 1.0, 'boundingbox': False, 'sim_mix': False, 'randomMosaic': True, 'mosaic_baseSize': 0.5, 'size_bias': 0, 'mosaic_num': 5, 'Novel_Mosaic_rate': 1.0, 'Location': True, 'no_pretrained': False, 'id': 1540, 'Epoch': 20, 'beta': 0.4, 'lr_base': 0.001, 'train_head': False, 'proto_loss': True, 'have_Original': True, 'mosaic_ori_num': 3, 'idx_task': None, 'num_task': 100, 'dataset': 'mini_imagenet', 'Few_loss': False, 'grid': 3, 'baseline': False, 'random_mosaic': False, 'yaml': None, 'test_mosaic': False}
+INFO: 2022-08-10 04:05:19,727 : model parameters :  
+INFO: 2022-08-10 04:05:19,727 : {'alpha': 1, 'beta_moving': 0.66, 'num_cls': 5, 'lr': 0.002, 'Epoch_num': 20, 'optimizer': 'SGD', 'weight_decay': '1e-4', 'lr_decay': True, 'decay_lr': 0.5, 'momentum': 0.9, 'temperature': 4, 'lr_decay_tactics': 'MultiStepLR', 'markstone': [10], 'scale_backbone': 0.1}
+INFO: 2022-08-10 04:05:22,696 : Sample FSL classes:   
+INFO: 2022-08-10 04:05:22,696 : [13, 5, 0, 1, 12]
+INFO: 2022-08-10 04:05:22,855 : Few-shot model start training...
+INFO: 2022-08-10 04:05:27,131 : Epoch 0 of 20 :  	  Step 0 of 2: 	 loss_train: 0.3045 	 loss_classification: 0.0229 	loss_Location: 0.7040
+INFO: 2022-08-10 04:05:28,448 : Epoch 0 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.5000
+INFO: 2022-08-10 04:05:32,283 : Epoch 1 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2981 	 loss_classification: 0.0203 	loss_Location: 0.6945
+INFO: 2022-08-10 04:05:33,840 : Epoch 1 of 20:  	 Dev_Acc : 0.5000  	 Best_Dev_Acc:0.5000
+INFO: 2022-08-10 04:05:37,793 : Epoch 2 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2955 	 loss_classification: 0.0250 	loss_Location: 0.6762
+INFO: 2022-08-10 04:05:39,319 : Epoch 2 of 20:  	 Dev_Acc : 0.5500  	 Best_Dev_Acc:0.5500
+INFO: 2022-08-10 04:05:43,273 : Epoch 3 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2823 	 loss_classification: 0.0220 	loss_Location: 0.6507
+INFO: 2022-08-10 04:05:44,820 : Epoch 3 of 20:  	 Dev_Acc : 0.5400  	 Best_Dev_Acc:0.5500
+INFO: 2022-08-10 04:05:48,688 : Epoch 4 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2687 	 loss_classification: 0.0204 	loss_Location: 0.6208
+INFO: 2022-08-10 04:05:50,236 : Epoch 4 of 20:  	 Dev_Acc : 0.6000  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:05:54,243 : Epoch 5 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2467 	 loss_classification: 0.0117 	loss_Location: 0.5876
+INFO: 2022-08-10 04:05:55,842 : Epoch 5 of 20:  	 Dev_Acc : 0.5700  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:05:59,844 : Epoch 6 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2309 	 loss_classification: 0.0094 	loss_Location: 0.5539
+INFO: 2022-08-10 04:06:01,417 : Epoch 6 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:06:05,327 : Epoch 7 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2177 	 loss_classification: 0.0098 	loss_Location: 0.5198
+INFO: 2022-08-10 04:06:06,890 : Epoch 7 of 20:  	 Dev_Acc : 0.5300  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:06:10,834 : Epoch 8 of 20 :  	  Step 0 of 2: 	 loss_train: 0.2013 	 loss_classification: 0.0066 	loss_Location: 0.4865
+INFO: 2022-08-10 04:06:12,409 : Epoch 8 of 20:  	 Dev_Acc : 0.4500  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:06:16,312 : Epoch 9 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1902 	 loss_classification: 0.0087 	loss_Location: 0.4537
+INFO: 2022-08-10 04:06:17,862 : Epoch 9 of 20:  	 Dev_Acc : 0.5600  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:06:21,807 : Epoch 10 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1731 	 loss_classification: 0.0045 	loss_Location: 0.4215
+INFO: 2022-08-10 04:06:23,392 : Epoch 10 of 20:  	 Dev_Acc : 0.4800  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:06:27,479 : Epoch 11 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1681 	 loss_classification: 0.0051 	loss_Location: 0.4073
+INFO: 2022-08-10 04:06:28,995 : Epoch 11 of 20:  	 Dev_Acc : 0.4900  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:06:32,904 : Epoch 12 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1617 	 loss_classification: 0.0040 	loss_Location: 0.3943
+INFO: 2022-08-10 04:06:34,458 : Epoch 12 of 20:  	 Dev_Acc : 0.4800  	 Best_Dev_Acc:0.6000
+INFO: 2022-08-10 04:06:38,486 : Epoch 13 of 20 :  	  Step 0 of 2: 	 loss_train: 0.1582 	 loss_classification: 0.0065 	loss_Location: 0.3790
+INFO: 2022-08-10 04:06:39,936 : Epoch 13 of 20:  	 Dev_Acc : 0.5100  	 Best_Dev_Acc:0.6000
